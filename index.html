@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="favicon.ico"> <!-- Optional favicon link -->
+</head>
+<body>
+    <div class="form-container">
+        <h1>Resume Builder</h1>
+        <!-- Form Fields -->
+        <label for="name">Name:</label>
+        <input id="name" type="text" placeholder="Enter your full name">
+
+        <label for="father">Father's Name:</label>
+        <input id="father" type="text" placeholder="Enter your father's name">
+
+        <label for="contact">Contact:</label>
+        <input id="contact" type="text" placeholder="Enter your phone number">
+
+        <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="Enter your email">
+
+        <label for="address">Address:</label>
+        <input id="address" type="text" placeholder="Enter your address">
+
+        <label for="college">College/University:</label>
+        <input id="college" type="text" placeholder="Enter your college or university name">
+
+        <label for="describe1">Description (1):</label>
+        <input id="describe1" type="text" placeholder="Brief description of your studies">
+
+        <label for="college2">Second College/University:</label>
+        <input id="college2" type="text" placeholder="Enter second college or university name (optional)">
+
+        <label for="describe2">Description (2):</label>
+        <input id="describe2" type="text" placeholder="Brief description of your studies at second college">
+
+        <label for="skills">Skills:</label>
+        <input id="skills" type="text" placeholder="List your skills separated by commas">
+
+        <label for="field_of_study">Field of Study:</label>
+        <input id="field_of_study" type="text" placeholder="Enter your field of study">
+
+        <label for="experience">Experience:</label>
+        <textarea id="experience" rows="3" placeholder="Describe your experience"></textarea>
+
+        <div class="button-container">
+            <button onclick="createResume()">Create Resume</button>
+        </div>
+    </div>
+
+    <div id="resume" class="resume-container"></div>
+
+    <!-- Load Libraries from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
